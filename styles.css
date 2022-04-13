@@ -167,7 +167,7 @@ section {
     min-width: 1600px;
     height: 600px;
     background-size: cover;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(./images/bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(images/bg.jpg);
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 200px;
