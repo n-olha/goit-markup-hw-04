@@ -101,7 +101,9 @@ section {
     letter-spacing: 0.02em;
 }
 .navigation a:hover,
-.navigation a:focus {
+.navigation a:focus,
+.navigation-list a:hover,
+.navigation-list a:focus {
     color: var(--accent-color);
 }
 .web {
@@ -349,6 +351,11 @@ section {
     justify-content: center;
 }
 .clients-list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
     border: 1px solid var(--icons-color);
     border-radius: 4px;
 }
@@ -359,6 +366,9 @@ section {
 .clients-list:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+.clients-list-link {
+   margin: 16px 32px;
 }
 .clients-list-link:hover .clients-list-icon,
 .clients-list-link:focus .clients-list-icon {
@@ -481,6 +491,7 @@ address .mail {
     margin-right: -30px;
     margin-bottom: -30px;
 }
+
 .gallery-list {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -489,8 +500,12 @@ address .mail {
 .gallery-list:nth-child(3n) {
     margin-right: 0;
 }
-
-.gallery-list img {
+.gallery-card:hover,
+.gallery-card:focus {
+    box-shadow: 2px 6px 8px 1px rgba(0, 0, 0, 0.3);;
+  
+}
+.gallery-photo {
     width: 370px;
 }
 .gallery-description {
@@ -498,6 +513,7 @@ address .mail {
     border:  1px solid #EEEEEE;
     padding: 20px 24px;
 }
+
 .gallery-title {
     font-weight: bold;
     font-size: 18px;
