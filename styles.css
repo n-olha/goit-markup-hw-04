@@ -22,9 +22,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-a {
-    display: block;
-}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -106,6 +104,7 @@ section {
 .navigation a:focus,
 .navigation-list a:hover,
 .navigation-list a:focus {
+    display: block;
     color: var(--accent-color);
 }
 .web {
@@ -150,6 +149,7 @@ section {
 .mail:focus,
 .tel:hover,
 .tel:focus {
+    display: block;
     color: var(--accent-color);
 }
 
@@ -336,6 +336,10 @@ section {
 .social-list-link:focus {
     background-color: var(--accent-color);
 }
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--white-color);
+}
 .social-list-icon, .clients-list-icon {
     fill: var(--icons-color);
 }
@@ -431,10 +435,6 @@ address .mail {
 }
 .footer-list:not(:last-child) {
     margin-right: 10px;
-}
-.footer-list:hover,
-.footer-list:focus { 
-    background-color: var(--accent-color);
 }
 .footer-social-list-link {
     display: flex;
