@@ -339,10 +339,6 @@ section {
 .social-list-icon, .clients-list-icon {
     fill: var(--icons-color);
 }
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: var(--white-color);
-}
 .all-clients {
     padding-top: 92px;
     padding-bottom: 96px;
@@ -361,13 +357,13 @@ section {
     border: 1px solid var(--icons-color);
     border-radius: 4px;
 }
-.clients-list:not(:last-child) {
-    margin-right: 30px;
-}
 .clients-list:hover,
 .clients-list:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+.clients-list:not(:last-child) {
+    margin-right: 30px;
 }
 .clients-list-link {
    margin: 16px 32px;
@@ -436,7 +432,10 @@ address .mail {
 .footer-list:not(:last-child) {
     margin-right: 10px;
 }
-
+.footer-list:hover,
+.footer-list:focus { 
+    background-color: var(--accent-color);
+}
 .footer-social-list-link {
     display: flex;
     align-items: center;
